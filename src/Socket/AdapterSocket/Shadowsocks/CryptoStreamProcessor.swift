@@ -105,16 +105,16 @@ extension ShadowsocksAdapter {
             case .CHACHA20:
                 switch operation {
                 case .decrypt:
-                    return SodiumStreamCrypto(key: key, iv: readIV, algorithm: .chacha20)
+                    return CCCrypto(operation: .decrypt, mode: .cfb, algorithm: .aes, initialVector: readIV, key: key)
                 case .encrypt:
-                    return SodiumStreamCrypto(key: key, iv: writeIV, algorithm: .chacha20)
+                    return CCCrypto(operation: .encrypt, mode: .cfb, algorithm: .aes, initialVector: writeIV, key: key)
                 }
             case .SALSA20:
                 switch operation {
                 case .decrypt:
-                    return SodiumStreamCrypto(key: key, iv: readIV, algorithm: .salsa20)
+                    return CCCrypto(operation: .decrypt, mode: .cfb, algorithm: .aes, initialVector: readIV, key: key)
                 case .encrypt:
-                    return SodiumStreamCrypto(key: key, iv: writeIV, algorithm: .salsa20)
+                    return CCCrypto(operation: .encrypt, mode: .cfb, algorithm: .aes, initialVector: writeIV, key: key)
                 }
             case .RC4MD5:
                 var combinedKey = Data(capacity: key.count + ivLength)
