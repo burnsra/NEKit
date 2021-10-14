@@ -12,13 +12,6 @@ open class DNSSession {
     open var matchResult: DNSSessionMatchResult?
     var indexToMatch = 0
     var expireAt: Date?
-    lazy var countryCode: String? = {
-        [unowned self] in
-        guard self.realIP != nil else {
-            return nil
-        }
-        return Utils.GeoIPLookup.Lookup(self.realIP!.presentation)
-    }()
 
     init?(message: DNSMessage) {
         guard message.messageType == .query else {

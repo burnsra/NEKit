@@ -65,7 +65,6 @@ custom_categories:
        - Rule
        - DirectRule
        - AllRule
-       - CountryRule
        - ListRule
        - DNSFailRule
 

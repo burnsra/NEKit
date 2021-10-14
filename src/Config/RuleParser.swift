@@ -21,8 +21,6 @@ struct RuleParser {
         }
 
         switch type {
-        case "country":
-            return try parseCountryRule(config, adapterFactoryManager: adapterFactoryManager)
         case "all":
             return try parseAllRule(config, adapterFactoryManager: adapterFactoryManager)
         case "list", "domainlist":
@@ -34,26 +32,6 @@ struct RuleParser {
         default:
             throw ConfigurationParserError.unknownRuleType
         }
-    }
-
-    static func parseCountryRule(_ config: Yaml, adapterFactoryManager: AdapterFactoryManager) throws -> CountryRule {
-        guard let country = config["country"].string else {
-            throw ConfigurationParserError.ruleParsingError(errorInfo: "Country code (country) is required for country rule.")
-        }
-
-        guard let adapter_id = config["adapter"].stringOrIntString else {
-            throw ConfigurationParserError.ruleParsingError(errorInfo: "An adapter id (adapter_id) is required.")
-        }
-
-        guard let adapter = adapterFactoryManager[adapter_id] else {
-            throw ConfigurationParserError.ruleParsingError(errorInfo: "Unknown adapter id.")
-        }
-
-        guard let match = config["match"].bool else {
-            throw ConfigurationParserError.ruleParsingError(errorInfo: "You have to specify whether to apply this rule to ip match the given country or not with \"match\".")
-        }
-
-        return CountryRule(countryCode: country, match: match, adapterFactory: adapter)
     }
 
     static func parseAllRule(_ config: Yaml, adapterFactoryManager: AdapterFactoryManager) throws -> AllRule {
