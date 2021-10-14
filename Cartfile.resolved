@@ -1,6 +1,6 @@
 github "Quick/Nimble" "v9.2.1"
 github "Quick/Quick" "v4.0.0"
 github "behrang/YamlSwift" "3.4.3"
+github "burnsra/Resolver" "eb6470fb5ffe31e4203c34d248e6e0718579aaf3"
 github "robbiehanson/CocoaAsyncSocket" "7.6.5"
-github "zhuhaow/Resolver" "0.2.0"
 github "zhuhaow/tun2socks" "0.7.0"

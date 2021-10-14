@@ -1,4 +1,4 @@
 github "robbiehanson/CocoaAsyncSocket" ~> 7.6.3
 github "behrang/YamlSwift" "3.4.3"
 github "zhuhaow/tun2socks" ~> 0.7.0
-github "zhuhaow/Resolver" ~> 0.2.0
+github "burnsra/Resolver" "main"
