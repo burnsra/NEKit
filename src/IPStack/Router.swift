@@ -1,5 +1,4 @@
 import Foundation
-import CocoaLumberjackSwift
 
 public class Router {
     var IPv4NATRoutes: [Port: (IPv4Address, Port)] = [:]
@@ -29,7 +28,7 @@ public class Router {
         if packet.sourceAddress == interfaceIP {
             if packet.sourcePort == proxyServerPort {
                 guard let (address, port) = IPv4NATRoutes[packet.destinationPort] else {
-                    DDLogError("Does not know how to handle packet: \(packet) because can't find entry in NAT table.")
+                    NSLog("Does not know how to handle packet: \(packet) because can't find entry in NAT table.)")
                     return nil
                 }
                 packet.sourcePort = port
@@ -44,7 +43,7 @@ public class Router {
                 return packet
             }
         } else {
-            DDLogError("Does not know how to handle packet.")
+            NSLog("Does not know how to handle packet.")
             return nil
         }
     }
@@ -64,11 +63,11 @@ public class Router {
                     TCPMutablePacket(payload: $0.payload)
             }
             for packet in packets {
-                DDLogVerbose("Received packet of type: \(packet.proto) from \(packet.sourceAddress) to \(packet.destinationAddress)")
+                NSLog("Received packet of type: \(packet.proto) from \(packet.sourceAddress) to \(packet.destinationAddress)")
                 if let packet = self.rewritePacket(packet) {
                     outputPackets.append(packet)
                 } else {
-                    DDLogVerbose("Failed to rewrite packet \(packet)")
+                    NSLog("Failed to rewrite packet \(packet)")
                 }
             }
 
@@ -77,7 +76,7 @@ public class Router {
             }
 
             if outputData.count > 0 {
-                DDLogVerbose("Write out \(outputData.count) packets.")
+                NSLog("Write out \(outputData.count) packets.")
                 NetworkInterface.TunnelProvider.packetFlow.writePackets(outputData, withProtocols: Array<NSNumber>(count: outputData.count, repeatedValue: Int(AF_INET)))
             }
             self.readAndProcessPackets()

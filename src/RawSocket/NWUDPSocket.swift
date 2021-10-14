@@ -1,6 +1,5 @@
 import Foundation
 import NetworkExtension
-import CocoaLumberjackSwift
 
 /// The delegate protocol of `NWUDPSocket`.
 public protocol NWUDPSocketDelegate: class {
@@ -71,7 +70,7 @@ public class NWUDPSocket: NSObject {
                 sSelf.updateActivityTimer()
                 
                 guard error == nil, let dataArray = dataArray else {
-                    DDLogError("Error when reading from remote server. \(error?.localizedDescription ?? "Connection reset")")
+                    NSLog("Error when reading from remote server. \(error?.localizedDescription ?? "Connection reset")")
                     return
                 }
                 

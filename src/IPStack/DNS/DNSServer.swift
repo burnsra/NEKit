@@ -1,6 +1,5 @@
 import Foundation
 import NetworkExtension
-import CocoaLumberjackSwift
 
 /// A DNS server designed as an `IPStackProtocol` implementation which works with TUN interface.
 ///
@@ -89,7 +88,7 @@ open class DNSServer: DNSResolverDelegate, IPStackProtocol {
         case .real, .unknown:
             lookupRemotely(session)
         default:
-            DDLogError("The rule match result should never be .Pass.")
+            NSLog("The rule match result should never be .Pass.")
         }
     }
 
@@ -174,7 +173,7 @@ open class DNSServer: DNSResolverDelegate, IPStackProtocol {
             response.answers.append(DNSResource.ARecord(session.requestMessage.queries[0].name, TTL: UInt32(Opt.DNSFakeIPTTL), address: session.fakeIP!))
             session.expireAt = Date().addingTimeInterval(Double(Opt.DNSFakeIPTTL))
             guard response.buildMessage() else {
-                DDLogError("Failed to build DNS response.")
+                NSLog("Failed to build DNS response.")
                 return
             }
 
@@ -221,7 +220,7 @@ open class DNSServer: DNSResolverDelegate, IPStackProtocol {
     fileprivate func setUpFakeIP(_ session: DNSSession) -> Bool {
 
         guard let fakeIP = pool?.fetchIP() else {
-            DDLogVerbose("Failed to get a fake IP.")
+            NSLog("Failed to get a fake IP.")
             return false
         }
         session.fakeIP = fakeIP
@@ -234,14 +233,14 @@ open class DNSServer: DNSResolverDelegate, IPStackProtocol {
 
     open func didReceive(rawResponse: Data) {
         guard let message = DNSMessage(payload: rawResponse) else {
-            DDLogError("Failed to parse response from remote DNS server.")
+            NSLog("Failed to parse response from remote DNS server.")
             return
         }
 
         queue.async {
             guard let session = self.pendingSessions.removeValue(forKey: message.transactionID) else {
                 // this should not be a problem if there are multiple DNS servers or the DNS server is hijacked.
-                DDLogVerbose("Do not find the corresponding DNS session for the response.")
+                NSLog("Do not find the corresponding DNS session for the response.")
                 return
             }
 
@@ -263,7 +262,7 @@ open class DNSServer: DNSResolverDelegate, IPStackProtocol {
             case .real:
                 self.outputSession(session)
             default:
-                DDLogError("The rule match result should never be .Pass or .Unknown in IP mode.")
+                NSLog("The rule match result should never be .Pass or .Unknown in IP mode.")
             }
         }
     }

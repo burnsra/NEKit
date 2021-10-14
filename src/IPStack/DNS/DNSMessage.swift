@@ -1,5 +1,4 @@
 import Foundation
-import CocoaLumberjackSwift
 
 open class DNSMessage {
     //    var sourceAddress: IPv4Address?
@@ -75,7 +74,7 @@ open class DNSMessage {
         if let status = DNSReturnStatus(rawValue: bytes & 0x0F) {
             self.status = status
         } else {
-            DDLogError("Received DNS response with unknown status: \(bytes & 0x0F).")
+            NSLog("Received DNS response with unknown status: \(bytes & 0x0F).")
             self.status = .serverFailure
         }
 
@@ -245,13 +244,13 @@ open class DNSQuery {
         scanner.skip(to: offset + self.nameBytesLength)
 
         guard let type = DNSType(rawValue: scanner.read16()!) else {
-            DDLogError("Received DNS packet with unknown type.")
+            NSLog("Received DNS packet with unknown type.")
             return nil
         }
         self.type = type
 
         guard let klass = DNSClass(rawValue: scanner.read16()!) else {
-            DDLogError("Received DNS packet with unknown class.")
+            NSLog("Received DNS packet with unknown class.")
             return nil
         }
         self.klass = klass
@@ -294,13 +293,13 @@ open class DNSResource {
         scanner.skip(to: offset + self.nameBytesLength)
 
         guard let type = DNSType(rawValue: scanner.read16()!) else {
-            DDLogError("Received DNS packet with unknown type.")
+            NSLog("Received DNS packet with unknown type.")
             return nil
         }
         self.type = type
 
         guard let klass = DNSClass(rawValue: scanner.read16()!) else {
-            DDLogError("Received DNS packet with unknown class.")
+            NSLog("Received DNS packet with unknown class.")
             return nil
         }
         self.klass = klass

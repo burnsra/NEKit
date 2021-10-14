@@ -1,5 +1,4 @@
 import Foundation
-import CocoaLumberjackSwift
 
 open class DebugObserverFactory: ObserverFactory {
     public override init() {}
@@ -30,11 +29,11 @@ open class DebugTunnelObserver: Observer<TunnelEvent> {
         switch event {
         case .receivedRequest,
              .closed:
-            DDLogInfo("\(event)")
+            NSLog("\(event)")
         case .opened,
              .connectedToRemote,
              .updatingAdapterSocket:
-            DDLogVerbose("\(event)")
+            NSLog("\(event)")
         case .closeCalled,
              .forceCloseCalled,
              .receivedReadySignal,
@@ -42,7 +41,7 @@ open class DebugTunnelObserver: Observer<TunnelEvent> {
              .proxySocketWroteData,
              .adapterSocketReadData,
              .adapterSocketWroteData:
-            DDLogDebug("\(event)")
+            NSLog("\(event)")
         }
     }
 }
@@ -51,19 +50,19 @@ open class DebugProxySocketObserver: Observer<ProxySocketEvent> {
     override open func signal(_ event: ProxySocketEvent) {
         switch event {
         case .errorOccured:
-            DDLogError("\(event)")
+            NSLog("\(event)")
         case .disconnected,
              .receivedRequest:
-            DDLogInfo("\(event)")
+            NSLog("\(event)")
         case .socketOpened,
              .askedToResponseTo,
              .readyForForward:
-            DDLogVerbose("\(event)")
+            NSLog("\(event)")
         case .disconnectCalled,
              .forceDisconnectCalled,
              .readData,
              .wroteData:
-            DDLogDebug("\(event)")
+            NSLog("\(event)")
         }
     }
 }
@@ -72,18 +71,18 @@ open class DebugAdapterSocketObserver: Observer<AdapterSocketEvent> {
     override open func signal(_ event: AdapterSocketEvent) {
         switch event {
         case .errorOccured:
-            DDLogError("\(event)")
+            NSLog("\(event)")
         case .disconnected,
              .connected:
-            DDLogInfo("\(event)")
+            NSLog("\(event)")
         case .socketOpened,
              .readyForForward:
-            DDLogVerbose("\(event)")
+            NSLog("\(event)")
         case .disconnectCalled,
              .forceDisconnectCalled,
              .readData,
              .wroteData:
-            DDLogDebug("\(event)")
+            NSLog("\(event)")
         }
     }
 }
@@ -93,10 +92,10 @@ open class DebugProxyServerObserver: Observer<ProxyServerEvent> {
         switch event {
         case .started,
              .stopped:
-            DDLogInfo("\(event)")
+            NSLog("\(event)")
         case .newSocketAccepted,
              .tunnelClosed:
-            DDLogVerbose("\(event)")
+            NSLog("\(event)")
         }
     }
 }
@@ -105,9 +104,9 @@ open class DebugRuleManagerObserver: Observer<RuleMatchEvent> {
     open override func signal(_ event: RuleMatchEvent) {
         switch event {
         case .ruleDidNotMatch, .dnsRuleMatched:
-            DDLogVerbose("\(event)")
+            NSLog("\(event)")
         case .ruleMatched:
-            DDLogInfo("\(event)")
+            NSLog("\(event)")
         }
     }
 }

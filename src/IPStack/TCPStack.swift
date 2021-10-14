@@ -1,6 +1,5 @@
 import Foundation
 import tun2socks
-import CocoaLumberjackSwift
 
 /// This class wraps around tun2socks to build a TCP only IP stack.
 open class TCPStack: TSIPStackDelegate, IPStackProtocol {
@@ -74,7 +73,7 @@ open class TCPStack: TSIPStackDelegate, IPStackProtocol {
     
     // MARK: TSIPStackDelegate Implementation
     open func didAcceptTCPSocket(_ sock: TSTCPSocket) {
-        DDLogDebug("Accepted a new socket from IP stack.")
+        NSLog("Accepted a new socket from IP stack.")
         let tunSocket = TUNTCPSocket(socket: sock)
         let proxySocket = DirectProxySocket(socket: tunSocket)
         self.proxyServer!.didAcceptNewSocket(proxySocket)

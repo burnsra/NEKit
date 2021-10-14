@@ -1,6 +1,5 @@
 import Cocoa
 import NEKit
-import CocoaLumberjackSwift
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -10,8 +9,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var socks5Proxy: GCDSOCKS5ProxyServer?
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        DDLog.removeAllLoggers()
-        DDLog.add(DDTTYLogger.sharedInstance, with: .info)
 
         ObserverFactory.currentFactory = DebugObserverFactory()
 
@@ -21,7 +18,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         do {
             try config.load(fromConfigFile: filepath)
         } catch let error {
-            DDLogError("\(error)")
+            NSLog("\(error)")
         }
         RuleManager.currentManager = config.ruleManager
         httpProxy = GCDHTTPProxyServer(address: nil, port: NEKit.Port(port: UInt16(config.proxyPort!)))
