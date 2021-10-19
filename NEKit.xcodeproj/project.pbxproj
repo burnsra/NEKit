@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		360F392D1DD206A3002BED59 /* Resolver.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 360F392B1DD2068E002BED59 /* Resolver.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		360F39301DD20787002BED59 /* Resolver.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 360F392E1DD20774002BED59 /* Resolver.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3611765A1DFFE98700A1A058 /* Buffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361176591DFFE98700A1A058 /* Buffer.swift */; };
 		3611765B1DFFE98700A1A058 /* Buffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361176591DFFE98700A1A058 /* Buffer.swift */; };
 		3611765D1E000A5400A1A058 /* ProtocolObfuscater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3611765C1E000A5400A1A058 /* ProtocolObfuscater.swift */; };
@@ -19,34 +17,6 @@
 		361176641E00361600A1A058 /* CryptoStreamProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361176621E00361600A1A058 /* CryptoStreamProcessor.swift */; };
 		3621B9491DFA92480003ABB3 /* GlobalIntializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3621B9481DFA92480003ABB3 /* GlobalIntializer.swift */; };
 		3621B94A1DFA92480003ABB3 /* GlobalIntializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3621B9481DFA92480003ABB3 /* GlobalIntializer.swift */; };
-		362347181D7D44E700A047DE /* NEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36463A301CDCD5EB0040579C /* NEKit.framework */; };
-		362347271D7D458E00A047DE /* NEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36C48D4D1CF88DED0071804F /* NEKit.framework */; };
-		362347391D7E6F3D00A047DE /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 362347371D7E6F3D00A047DE /* Nimble.framework */; };
-		3623473A1D7E6F3D00A047DE /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 362347381D7E6F3D00A047DE /* Quick.framework */; };
-		3623473D1D7E6F7300A047DE /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3623473B1D7E6F7300A047DE /* Nimble.framework */; };
-		3623473E1D7E6F7300A047DE /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3623473C1D7E6F7300A047DE /* Quick.framework */; };
-		362347401D7E706300A047DE /* IPRangeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3623473F1D7E706300A047DE /* IPRangeSpec.swift */; };
-		362347411D7E706300A047DE /* IPRangeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3623473F1D7E706300A047DE /* IPRangeSpec.swift */; };
-		362347881D7EA65400A047DE /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 362347371D7E6F3D00A047DE /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		362347891D7EA65400A047DE /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 362347381D7E6F3D00A047DE /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		3623478A1D7EA65400A047DE /* CocoaAsyncSocket.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 36C4B7DB1D6C517600F2BDCD /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		3623478B1D7EA65400A047DE /* CocoaLumberjack.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 36C4B7DC1D6C517600F2BDCD /* CocoaLumberjack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		3623478C1D7EA65400A047DE /* CocoaLumberjackSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 36C4B7DD1D6C517600F2BDCD /* CocoaLumberjackSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		3623478E1D7EA65400A047DE /* lwip.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 36C4B7DF1D6C517600F2BDCD /* lwip.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		3623478F1D7EA65400A047DE /* MMDB.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 36C4B7E01D6C517600F2BDCD /* MMDB.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		362347901D7EA65400A047DE /* Sodium.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 36C4B7E11D6C517600F2BDCD /* Sodium.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		362347911D7EA65400A047DE /* tun2socks.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 36C4B7E21D6C517600F2BDCD /* tun2socks.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		362347921D7EA65400A047DE /* Yaml.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 36C4B7E31D6C517600F2BDCD /* Yaml.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		362347941D7FC5CA00A047DE /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3623473B1D7E6F7300A047DE /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		362347951D7FC5CA00A047DE /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3623473C1D7E6F7300A047DE /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		362347961D7FC5CA00A047DE /* CocoaAsyncSocket.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 36C4B7C91D6C508100F2BDCD /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		362347971D7FC5CA00A047DE /* CocoaLumberjack.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 36C4B7CA1D6C508100F2BDCD /* CocoaLumberjack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		362347981D7FC5CA00A047DE /* CocoaLumberjackSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 36C4B7CB1D6C508100F2BDCD /* CocoaLumberjackSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		3623479A1D7FC5CA00A047DE /* lwip.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 36C4B7CD1D6C508100F2BDCD /* lwip.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		3623479B1D7FC5CA00A047DE /* MMDB.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 36C4B7CE1D6C508100F2BDCD /* MMDB.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		3623479C1D7FC5CA00A047DE /* Sodium.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 36C4B7CF1D6C508100F2BDCD /* Sodium.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		3623479D1D7FC5CA00A047DE /* tun2socks.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 36C4B7D01D6C508100F2BDCD /* tun2socks.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		3623479E1D7FC5CA00A047DE /* Yaml.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 36C4B7D11D6C508100F2BDCD /* Yaml.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		362347A01D824E4300A047DE /* SOCKS5Adapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3623479F1D824E4300A047DE /* SOCKS5Adapter.swift */; };
 		362347A11D824E4300A047DE /* SOCKS5Adapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3623479F1D824E4300A047DE /* SOCKS5Adapter.swift */; };
 		362347A31D82525200A047DE /* SOCKS5AdapterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362347A21D82525200A047DE /* SOCKS5AdapterFactory.swift */; };
@@ -222,8 +192,6 @@
 		36CB0D391D51E06700DB7AF5 /* HTTPHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CB0D371D51E06700DB7AF5 /* HTTPHeader.swift */; };
 		36D4007D1E07E48B00583102 /* HTTPURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D4007C1E07E48B00583102 /* HTTPURL.swift */; };
 		36D4007E1E07E48B00583102 /* HTTPURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D4007C1E07E48B00583102 /* HTTPURL.swift */; };
-		36D400801E07E8A100583102 /* HTTPURLSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D4007F1E07E8A100583102 /* HTTPURLSpec.swift */; };
-		36D400811E07E8A100583102 /* HTTPURLSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D4007F1E07E8A100583102 /* HTTPURLSpec.swift */; };
 		36D591BE1D6C40F2003E92B2 /* IPRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D591BD1D6C40F2003E92B2 /* IPRange.swift */; };
 		36D591BF1D6C40F2003E92B2 /* IPRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D591BD1D6C40F2003E92B2 /* IPRange.swift */; };
 		36D591C11D6C4895003E92B2 /* IPRangeListRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D591C01D6C4895003E92B2 /* IPRangeListRule.swift */; };
@@ -234,74 +202,12 @@
 		36DB3CE81E0CD17100D907DB /* IPInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DB3CE61E0CD17100D907DB /* IPInterval.swift */; };
 		36DB3CEA1E0CD19000D907DB /* IPMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DB3CE91E0CD19000D907DB /* IPMask.swift */; };
 		36DB3CEB1E0CD19000D907DB /* IPMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DB3CE91E0CD19000D907DB /* IPMask.swift */; };
-		36DB3CEF1E0D610500D907DB /* IPAddressSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DB3CEE1E0D610500D907DB /* IPAddressSpec.swift */; };
-		36DB3CF01E0D610500D907DB /* IPAddressSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DB3CEE1E0D610500D907DB /* IPAddressSpec.swift */; };
 		36E44A021CF2ED4800185DBF /* TUNInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E44A011CF2ED4800185DBF /* TUNInterface.swift */; };
 		36E9CCFF1DD6EEF5003597CE /* QueueFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E9CCFE1DD6EEF5003597CE /* QueueFactory.swift */; };
 		36E9CD001DD6EEF5003597CE /* QueueFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E9CCFE1DD6EEF5003597CE /* QueueFactory.swift */; };
 		E1804E21271870AE009075D6 /* Resolver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 360F392B1DD2068E002BED59 /* Resolver.framework */; };
 		E1804E23271870C8009075D6 /* Resolver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 360F392B1DD2068E002BED59 /* Resolver.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		362347191D7D44E700A047DE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 36463A271CDCD5EB0040579C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 36463A2F1CDCD5EB0040579C;
-			remoteInfo = "NEKit-macOS";
-		};
-		362347281D7D458E00A047DE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 36463A271CDCD5EB0040579C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 36C48D4C1CF88DED0071804F;
-			remoteInfo = "NEKit-iOS";
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		362347871D7EA64400A047DE /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				360F392D1DD206A3002BED59 /* Resolver.framework in CopyFiles */,
-				362347881D7EA65400A047DE /* Nimble.framework in CopyFiles */,
-				362347891D7EA65400A047DE /* Quick.framework in CopyFiles */,
-				3623478A1D7EA65400A047DE /* CocoaAsyncSocket.framework in CopyFiles */,
-				3623478B1D7EA65400A047DE /* CocoaLumberjack.framework in CopyFiles */,
-				3623478C1D7EA65400A047DE /* CocoaLumberjackSwift.framework in CopyFiles */,
-				3623478E1D7EA65400A047DE /* lwip.framework in CopyFiles */,
-				3623478F1D7EA65400A047DE /* MMDB.framework in CopyFiles */,
-				362347901D7EA65400A047DE /* Sodium.framework in CopyFiles */,
-				362347911D7EA65400A047DE /* tun2socks.framework in CopyFiles */,
-				362347921D7EA65400A047DE /* Yaml.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		362347931D7FC5BF00A047DE /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				360F39301DD20787002BED59 /* Resolver.framework in CopyFiles */,
-				362347941D7FC5CA00A047DE /* Nimble.framework in CopyFiles */,
-				362347951D7FC5CA00A047DE /* Quick.framework in CopyFiles */,
-				362347961D7FC5CA00A047DE /* CocoaAsyncSocket.framework in CopyFiles */,
-				362347971D7FC5CA00A047DE /* CocoaLumberjack.framework in CopyFiles */,
-				362347981D7FC5CA00A047DE /* CocoaLumberjackSwift.framework in CopyFiles */,
-				3623479A1D7FC5CA00A047DE /* lwip.framework in CopyFiles */,
-				3623479B1D7FC5CA00A047DE /* MMDB.framework in CopyFiles */,
-				3623479C1D7FC5CA00A047DE /* Sodium.framework in CopyFiles */,
-				3623479D1D7FC5CA00A047DE /* tun2socks.framework in CopyFiles */,
-				3623479E1D7FC5CA00A047DE /* Yaml.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		360F392B1DD2068E002BED59 /* Resolver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Resolver.framework; path = Carthage/Build/Mac/Resolver.framework; sourceTree = SOURCE_ROOT; };
@@ -314,10 +220,6 @@
 		36164A2C1CE6EB3800BAC90A /* TCPMutablePacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCPMutablePacket.swift; sourceTree = "<group>"; };
 		36164A2E1CE7099300BAC90A /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		3621B9481DFA92480003ABB3 /* GlobalIntializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalIntializer.swift; sourceTree = "<group>"; };
-		362347131D7D44E700A047DE /* NEKitTest-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NEKitTest-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		362347171D7D44E700A047DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		362347221D7D458E00A047DE /* NEKitTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NEKitTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		362347261D7D458E00A047DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3623472F1D7D475100A047DE /* bootstrap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = bootstrap; sourceTree = "<group>"; };
 		362347301D7D475100A047DE /* bootstrap-if-needed */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "bootstrap-if-needed"; sourceTree = "<group>"; };
 		362347311D7D475100A047DE /* Cartfile.resolved */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
@@ -326,7 +228,6 @@
 		362347381D7E6F3D00A047DE /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/Mac/Quick.framework; sourceTree = SOURCE_ROOT; };
 		3623473B1D7E6F7300A047DE /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = SOURCE_ROOT; };
 		3623473C1D7E6F7300A047DE /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = SOURCE_ROOT; };
-		3623473F1D7E706300A047DE /* IPRangeSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPRangeSpec.swift; sourceTree = "<group>"; };
 		362347861D7EA2A500A047DE /* Cartfile.private */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.private; sourceTree = "<group>"; };
 		3623479F1D824E4300A047DE /* SOCKS5Adapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SOCKS5Adapter.swift; sourceTree = "<group>"; };
 		362347A21D82525200A047DE /* SOCKS5AdapterFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SOCKS5AdapterFactory.swift; sourceTree = "<group>"; };
@@ -442,38 +343,16 @@
 		36CB0D371D51E06700DB7AF5 /* HTTPHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPHeader.swift; sourceTree = "<group>"; };
 		36CB6DF31D97A89F004D8655 /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
 		36D4007C1E07E48B00583102 /* HTTPURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPURL.swift; sourceTree = "<group>"; };
-		36D4007F1E07E8A100583102 /* HTTPURLSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPURLSpec.swift; sourceTree = "<group>"; };
 		36D591BD1D6C40F2003E92B2 /* IPRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPRange.swift; sourceTree = "<group>"; };
 		36D591C01D6C4895003E92B2 /* IPRangeListRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPRangeListRule.swift; sourceTree = "<group>"; };
 		36DB3CE31E0BCB1600D907DB /* UInt128.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UInt128.swift; sourceTree = "<group>"; };
 		36DB3CE61E0CD17100D907DB /* IPInterval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPInterval.swift; sourceTree = "<group>"; };
 		36DB3CE91E0CD19000D907DB /* IPMask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPMask.swift; sourceTree = "<group>"; };
-		36DB3CEE1E0D610500D907DB /* IPAddressSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPAddressSpec.swift; sourceTree = "<group>"; };
 		36E44A011CF2ED4800185DBF /* TUNInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TUNInterface.swift; sourceTree = "<group>"; };
 		36E9CCFE1DD6EEF5003597CE /* QueueFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QueueFactory.swift; path = Tunnel/QueueFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		362347101D7D44E700A047DE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				362347391D7E6F3D00A047DE /* Nimble.framework in Frameworks */,
-				3623473A1D7E6F3D00A047DE /* Quick.framework in Frameworks */,
-				362347181D7D44E700A047DE /* NEKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3623471F1D7D458E00A047DE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3623473D1D7E6F7300A047DE /* Nimble.framework in Frameworks */,
-				3623473E1D7E6F7300A047DE /* Quick.framework in Frameworks */,
-				362347271D7D458E00A047DE /* NEKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		36463A2C1CDCD5EB0040579C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -519,30 +398,6 @@
 			path = Packet;
 			sourceTree = "<group>";
 		};
-		362347141D7D44E700A047DE /* NEKitTest-macOS */ = {
-			isa = PBXGroup;
-			children = (
-				362347171D7D44E700A047DE /* Info.plist */,
-			);
-			path = "NEKitTest-macOS";
-			sourceTree = "<group>";
-		};
-		362347231D7D458E00A047DE /* NEKitTests-iOS */ = {
-			isa = PBXGroup;
-			children = (
-				362347261D7D458E00A047DE /* Info.plist */,
-			);
-			path = "NEKitTests-iOS";
-			sourceTree = "<group>";
-		};
-		3623472D1D7D45FD00A047DE /* test */ = {
-			isa = PBXGroup;
-			children = (
-				362347421D7E707600A047DE /* Utils */,
-			);
-			path = test;
-			sourceTree = "<group>";
-		};
 		3623472E1D7D475100A047DE /* bin */ = {
 			isa = PBXGroup;
 			children = (
@@ -550,15 +405,6 @@
 				362347301D7D475100A047DE /* bootstrap-if-needed */,
 			);
 			path = bin;
-			sourceTree = "<group>";
-		};
-		362347421D7E707600A047DE /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				36DB3CED1E0D60ED00D907DB /* IP */,
-				36D4007F1E07E8A100583102 /* HTTPURLSpec.swift */,
-			);
-			path = Utils;
 			sourceTree = "<group>";
 		};
 		362950431D6AE2BC001A30F6 /* Event */ = {
@@ -601,13 +447,10 @@
 				360F392A1DD2068D002BED59 /* Frameworks */,
 				36C48D4E1CF88DED0071804F /* NEKit-iOS */,
 				368225B91D12484D00E7B495 /* NEKit-macOS */,
-				362347141D7D44E700A047DE /* NEKitTest-macOS */,
-				362347231D7D458E00A047DE /* NEKitTests-iOS */,
 				36463A311CDCD5EB0040579C /* Products */,
 				3623472E1D7D475100A047DE /* bin */,
 				36A718DF1D5AE37C00DC35F5 /* docs */,
 				36463A321CDCD5EB0040579C /* src */,
-				3623472D1D7D45FD00A047DE /* test */,
 				3664F0C61CE37763008BA6D8 /* .swiftlint.yml */,
 				36A719ED1D63310400DC35F5 /* CHANGELOG.md */,
 				36B1624A1CDDA13500F24C97 /* Cartfile */,
@@ -628,8 +471,6 @@
 			children = (
 				36463A301CDCD5EB0040579C /* NEKit.framework */,
 				36C48D4D1CF88DED0071804F /* NEKit.framework */,
-				362347131D7D44E700A047DE /* NEKitTest-macOS.xctest */,
-				362347221D7D458E00A047DE /* NEKitTests-iOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -912,15 +753,6 @@
 			name = IP;
 			sourceTree = "<group>";
 		};
-		36DB3CED1E0D60ED00D907DB /* IP */ = {
-			isa = PBXGroup;
-			children = (
-				3623473F1D7E706300A047DE /* IPRangeSpec.swift */,
-				36DB3CEE1E0D610500D907DB /* IPAddressSpec.swift */,
-			);
-			name = IP;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -943,44 +775,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		362347121D7D44E700A047DE /* NEKitTest-macOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3623471D1D7D44E700A047DE /* Build configuration list for PBXNativeTarget "NEKitTest-macOS" */;
-			buildPhases = (
-				3623470F1D7D44E700A047DE /* Sources */,
-				362347101D7D44E700A047DE /* Frameworks */,
-				362347111D7D44E700A047DE /* Resources */,
-				362347871D7EA64400A047DE /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3623471A1D7D44E700A047DE /* PBXTargetDependency */,
-			);
-			name = "NEKitTest-macOS";
-			productName = "NEKitTest-macOS";
-			productReference = 362347131D7D44E700A047DE /* NEKitTest-macOS.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		362347211D7D458E00A047DE /* NEKitTests-iOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3623472A1D7D458E00A047DE /* Build configuration list for PBXNativeTarget "NEKitTests-iOS" */;
-			buildPhases = (
-				3623471E1D7D458E00A047DE /* Sources */,
-				3623471F1D7D458E00A047DE /* Frameworks */,
-				362347201D7D458E00A047DE /* Resources */,
-				362347931D7FC5BF00A047DE /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				362347291D7D458E00A047DE /* PBXTargetDependency */,
-			);
-			name = "NEKitTests-iOS";
-			productName = "NEKitTests-iOS";
-			productReference = 362347221D7D458E00A047DE /* NEKitTests-iOS.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		36463A2F1CDCD5EB0040579C /* NEKit-macOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 36463A441CDCD5EB0040579C /* Build configuration list for PBXNativeTarget "NEKit-macOS" */;
@@ -1037,14 +831,6 @@
 				LastUpgradeCheck = 1300;
 				ORGANIZATIONNAME = "Zhuhao Wang";
 				TargetAttributes = {
-					362347121D7D44E700A047DE = {
-						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 1020;
-					};
-					362347211D7D458E00A047DE = {
-						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 1020;
-					};
 					36463A2F1CDCD5EB0040579C = {
 						CreatedOnToolsVersion = 7.3;
 						LastSwiftMigration = 1020;
@@ -1074,27 +860,11 @@
 			targets = (
 				36463A2F1CDCD5EB0040579C /* NEKit-macOS */,
 				36C48D4C1CF88DED0071804F /* NEKit-iOS */,
-				362347121D7D44E700A047DE /* NEKitTest-macOS */,
-				362347211D7D458E00A047DE /* NEKitTests-iOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		362347111D7D44E700A047DE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		362347201D7D458E00A047DE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		36463A2E1CDCD5EB0040579C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1197,26 +967,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3623470F1D7D44E700A047DE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				36D400801E07E8A100583102 /* HTTPURLSpec.swift in Sources */,
-				36DB3CEF1E0D610500D907DB /* IPAddressSpec.swift in Sources */,
-				362347401D7E706300A047DE /* IPRangeSpec.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3623471E1D7D458E00A047DE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				36D400811E07E8A100583102 /* HTTPURLSpec.swift in Sources */,
-				36DB3CF01E0D610500D907DB /* IPAddressSpec.swift in Sources */,
-				362347411D7E706300A047DE /* IPRangeSpec.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		36463A2B1CDCD5EB0040579C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1423,99 +1173,7 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		3623471A1D7D44E700A047DE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 36463A2F1CDCD5EB0040579C /* NEKit-macOS */;
-			targetProxy = 362347191D7D44E700A047DE /* PBXContainerItemProxy */;
-		};
-		362347291D7D458E00A047DE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 36C48D4C1CF88DED0071804F /* NEKit-iOS */;
-			targetProxy = 362347281D7D458E00A047DE /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		3623471B1D7D44E700A047DE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				INFOPLIST_FILE = "NEKitTest-macOS/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.zhuhaow.NEKit.Test;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		3623471C1D7D44E700A047DE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				INFOPLIST_FILE = "NEKitTest-macOS/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.zhuhaow.NEKit.Test;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		3623472B1D7D458E00A047DE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				INFOPLIST_FILE = "NEKitTests-iOS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.zhuhaow.NEKit.Test;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		3623472C1D7D458E00A047DE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				INFOPLIST_FILE = "NEKitTests-iOS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.zhuhaow.NEKit.Test;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_VERSION = 5.0;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		36463A421CDCD5EB0040579C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1779,24 +1437,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3623471D1D7D44E700A047DE /* Build configuration list for PBXNativeTarget "NEKitTest-macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3623471B1D7D44E700A047DE /* Debug */,
-				3623471C1D7D44E700A047DE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3623472A1D7D458E00A047DE /* Build configuration list for PBXNativeTarget "NEKitTests-iOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3623472B1D7D458E00A047DE /* Debug */,
-				3623472C1D7D458E00A047DE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		36463A2A1CDCD5EB0040579C /* Build configuration list for PBXProject "NEKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
