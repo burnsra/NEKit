@@ -29,6 +29,7 @@
 		36B1624A1CDDA13500F24C97 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		36CB6DF31D97A89F004D8655 /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
 		E15FC842271F5B0C0016B168 /* Sources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sources; sourceTree = "<group>"; };
+		E15FC845271F5CC00016B168 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +58,7 @@
 		36463A261CDCD5EB0040579C = {
 			isa = PBXGroup;
 			children = (
+				E15FC845271F5CC00016B168 /* Package.swift */,
 				E15FC842271F5B0C0016B168 /* Sources */,
 				36463A311CDCD5EB0040579C /* Products */,
 				3623472E1D7D475100A047DE /* bin */,
