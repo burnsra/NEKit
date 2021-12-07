@@ -12,7 +12,8 @@ open class DomainListRule: Rule {
             case .prefix(let prefix):
                 return domain.hasPrefix(prefix)
             case .suffix(let suffix):
-                return domain.hasSuffix(suffix)
+                let tmpSuffix = suffix
+                return suffix.starts(with: ".") ? domain.hasSuffix(String(tmpSuffix.dropFirst())) : domain.hasSuffix(suffix)
             case .keyword(let keyword):
                 return domain.contains(keyword)
             case .complete(let match):
