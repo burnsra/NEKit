@@ -8,7 +8,7 @@ import Resolver
  This proxy does not listen on any port.
  */
 open class ProxyServer: NSObject, TunnelDelegate {
-    typealias TunnelArray = [Tunnel]
+    public typealias TunnelArray = [Tunnel]
 
     /// The port of proxy server.
     public let port: Port
@@ -28,7 +28,7 @@ open class ProxyServer: NSObject, TunnelDelegate {
 
     open var observer: Observer<ProxyServerEvent>?
 
-    var tunnels: TunnelArray = []
+    public var tunnels: TunnelArray = []
 
     /**
      Create an instance of proxy server.
@@ -103,5 +103,15 @@ open class ProxyServer: NSObject, TunnelDelegate {
         }
 
         tunnels.remove(at: index)
+    }
+
+    public typealias DelayFunc = () -> TimeInterval
+    public var delayFunc: DelayFunc? = nil
+    func shouldDelay(_ tunnel: Tunnel) -> TimeInterval {
+    #if os(iOS)
+        return delayFunc?() ?? 0
+    #else
+        return 0
+    #endif
     }
 }

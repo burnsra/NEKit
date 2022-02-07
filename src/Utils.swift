@@ -97,4 +97,8 @@ public struct Utils {
             fill(data: &data, from: from, to: from + length)
         }
     }
+
+    public static func address<T: AnyObject>(of object: T) -> Int {
+        return unsafeBitCast(object, to: Int.self)
+    }
 }
