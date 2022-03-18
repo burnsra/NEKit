@@ -1,3 +1,3 @@
 github "burnsra/Resolver" "eb6470fb5ffe31e4203c34d248e6e0718579aaf3"
-github "robbiehanson/CocoaAsyncSocket" "7.6.5"
+github "robbiehanson/CocoaAsyncSocket" "5ddba5e72f38e56010dbfac08b44478ee5000c0c"
 github "zhuhaow/tun2socks" "0.7.0"
