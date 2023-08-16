@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "NEKit",
     platforms: [
-        .macOS(.v11_3)
+        .macOS(.v11)
     ],
     products: [
         .library(
