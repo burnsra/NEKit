@@ -1,3 +1,0 @@
-github "robbiehanson/CocoaAsyncSocket" "master"
-github "zhuhaow/tun2socks" ~> 0.7.0
-github "burnsra/Resolver" "main"
