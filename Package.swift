@@ -16,7 +16,6 @@ let package = Package(
         .package(url: "https://github.com/robbiehanson/CocoaAsyncSocket.git", from: "7.6.5"),
         .package(url: "https://github.com/zhuhaow/tun2socks.git", from: "0.8.0"),
         .package(url: "https://github.com/zhuhaow/Resolver", from: "0.3.0"),
-        .package(name: "Sodium", url: "https://github.com/jedisct1/swift-sodium", from: "0.9.1")
     ],
     targets: [
         .target(
@@ -25,7 +24,6 @@ let package = Package(
                 .product(name: "CocoaAsyncSocket", package: "CocoaAsyncSocket"),
                 .product(name: "tun2socks", package: "tun2socks"),
                 .product(name: "Resolver", package: "Resolver"),
-                .product(name: "Clibsodium", package: "Sodium")
             ],
             path: "src"
         ),

@@ -10,7 +10,6 @@
 		0085DF882C5811BB00F8DDB3 /* CocoaAsyncSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 0085DF872C5811BB00F8DDB3 /* CocoaAsyncSocket */; };
 		0085DF8B2C5811D000F8DDB3 /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = 0085DF8A2C5811D000F8DDB3 /* Resolver */; };
 		0085DF8E2C5811DC00F8DDB3 /* tun2socks in Frameworks */ = {isa = PBXBuildFile; productRef = 0085DF8D2C5811DC00F8DDB3 /* tun2socks */; };
-		0085DF912C58122C00F8DDB3 /* Clibsodium in Frameworks */ = {isa = PBXBuildFile; productRef = 0085DF902C58122C00F8DDB3 /* Clibsodium */; };
 		3611765A1DFFE98700A1A058 /* Buffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361176591DFFE98700A1A058 /* Buffer.swift */; };
 		3611765D1E000A5400A1A058 /* ProtocolObfuscater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3611765C1E000A5400A1A058 /* ProtocolObfuscater.swift */; };
 		361176601E00305500A1A058 /* StreamObfuscater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3611765F1E00305500A1A058 /* StreamObfuscater.swift */; };
@@ -221,7 +220,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0085DF8B2C5811D000F8DDB3 /* Resolver in Frameworks */,
-				0085DF912C58122C00F8DDB3 /* Clibsodium in Frameworks */,
 				0085DF882C5811BB00F8DDB3 /* CocoaAsyncSocket in Frameworks */,
 				0085DF8E2C5811DC00F8DDB3 /* tun2socks in Frameworks */,
 			);
@@ -552,7 +550,6 @@
 				0085DF872C5811BB00F8DDB3 /* CocoaAsyncSocket */,
 				0085DF8A2C5811D000F8DDB3 /* Resolver */,
 				0085DF8D2C5811DC00F8DDB3 /* tun2socks */,
-				0085DF902C58122C00F8DDB3 /* Clibsodium */,
 			);
 			productName = NEKit;
 			productReference = 36463A301CDCD5EB0040579C /* NEKit.framework */;
@@ -588,7 +585,6 @@
 				0085DF862C5811BB00F8DDB3 /* XCRemoteSwiftPackageReference "CocoaAsyncSocket" */,
 				0085DF892C5811D000F8DDB3 /* XCRemoteSwiftPackageReference "Resolver" */,
 				0085DF8C2C5811DC00F8DDB3 /* XCRemoteSwiftPackageReference "tun2socks" */,
-				0085DF8F2C58122B00F8DDB3 /* XCRemoteSwiftPackageReference "swift-sodium" */,
 			);
 			productRefGroup = 36463A311CDCD5EB0040579C /* Products */;
 			projectDirPath = "";
@@ -998,14 +994,6 @@
 				minimumVersion = 0.8.0;
 			};
 		};
-		0085DF8F2C58122B00F8DDB3 /* XCRemoteSwiftPackageReference "swift-sodium" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/jedisct1/swift-sodium";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.9.1;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1023,11 +1011,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0085DF8C2C5811DC00F8DDB3 /* XCRemoteSwiftPackageReference "tun2socks" */;
 			productName = tun2socks;
-		};
-		0085DF902C58122C00F8DDB3 /* Clibsodium */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0085DF8F2C58122B00F8DDB3 /* XCRemoteSwiftPackageReference "swift-sodium" */;
-			productName = Clibsodium;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
