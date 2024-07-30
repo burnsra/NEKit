@@ -34,7 +34,7 @@ open class CCCrypto: StreamCryptoProtocol {
 
     public init(operation: CryptoOperation, mode: Mode, algorithm: Algorithm, initialVector: Data?, key: Data) {
         let cryptor = UnsafeMutablePointer<CCCryptorRef?>.allocate(capacity: 1)
-        _ = key.withUnsafeBytes { k in
+        key.withUnsafeBytes { k in
             if let initialVector = initialVector {
                 _ = initialVector.withUnsafeBytes { iv in
                     CCCryptorCreateWithMode(operation.toCCOperation(), mode.toCCMode(), algorithm.toCCAlgorithm(), CCPadding(ccNoPadding), iv.baseAddress!, k.baseAddress!, key.count, nil, 0, 0, 0, cryptor)
